@@ -1,0 +1,16 @@
+import dotenv from 'dotenv';
+
+// Config .env file 
+dotenv.config();
+
+interface Config {
+    port: number;
+    nodeEnv: string;
+}
+
+const config: Config = {
+    port: Number(process.env.PORT) || 5000,
+    nodeEnv: process.env.NODE_ENV || 'development',
+}
+
+export default config;
