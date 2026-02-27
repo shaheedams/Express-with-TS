@@ -1,6 +1,5 @@
-import { Router } from "express";
-import { createItem, getAllItems } from "../controllers/itemControllers.js";
-
+import { Router } from 'express';
+import { createItem, getAllItems } from '../controllers/itemControllers';
 
 const userRouter = Router();
 
